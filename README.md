@@ -38,6 +38,13 @@ A API ficará disponivel em **http://localhost:5000/scalar/**
 
 ## 📁 Frontend
 
+#### 📋 O que voçê vai ver nesse Projeto
+
+| Tecnologia | Descrição |
+|-----------|-----------|
+| **Bootstrap** | Framework front-end de códigos prontos em HTML, CSS e JavaScript para criar sites e interfaces web responsivas |
+| **react-slick** | Biblioteca React usada para criar carrosséis (ou sliders). |
+
 - Recuperar as dependencias do projeto node_modules . 
 ```bash
 cd Frontend
