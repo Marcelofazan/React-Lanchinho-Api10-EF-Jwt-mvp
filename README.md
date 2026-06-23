@@ -4,6 +4,9 @@ Aplicativo de Lanchinho com automação Google Sheets em React e API com autenti
 #### 🎨 Aqui uma Demonstração do Projeto
 <img width="800" height="350" alt="Lanchinho" src="https://github.com/user-attachments/assets/0819c431-f7cf-47cc-9659-090a4bf6b5c3" />
 
+#### 💬 Requisitos do Projeto
+Configrações do arquivo **appsettings.json**
+
 #### ⚠️ String de conexão do banco
 Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no trecho indicado:
 
@@ -106,7 +109,8 @@ A importação de dados para planilha funciona como carga, toda vez que o projet
 
 #### Passo 2: Criação da Planilha
 - Acesse uma planilha qualquer **https://docs.google.com/spreadsheets/create**, somente para pegar um ID.
-- Copie o Id da planilha, copiei o conteudo de **d/** até **/edit** que aparece no link e subistitua em [ID_PLANILHA].  
+- Copie o Id da planilha, copiei o conteudo de **d/** até **/edit** que aparece no link e subistitua em [ID_PLANILHA], no arquivo **appsettings.json** .
+  
 ```bash
   "GoogleSheets": {
     "SpreadsheetId": "[ID_PLANILHA]",
@@ -149,7 +153,7 @@ A importação de dados para planilha funciona como carga, toda vez que o projet
 - O Google vai exibir uma senha de 16 letras dentro de uma caixa amarela.
 - Copie essa senha (ignore os espaços, use as 16 letras juntas).
 
-- Modifique [SEU_EMAIL] e [SUA_SENHA] no arquivo **appsettings.json**, no trecho indicado:
+- Modifique [SEU_EMAIL] e [SUA_SENHA] no arquivo **appsettings.json**.
 
 ```bash
 "EmailSettings": {
