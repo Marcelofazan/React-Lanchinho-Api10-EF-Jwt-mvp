@@ -29,6 +29,8 @@ Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no 
 
 #### 🔄 Executar a aplicação
 
+VSCode Terminal [1]
+
 ```bash
 cd ProjetoLanchinhoAPI
 dotnet ef migrations add BancoInicial
@@ -48,6 +50,8 @@ A API ficará disponivel em **http://localhost:5000/scalar/**
 | **react-slick** | Biblioteca React usada para criar carrosséis (ou sliders). |
 
 #### 🔄 Executar a aplicação
+
+VSCode Terminal [2]
 
 - Recuperar as dependencias do projeto node_modules . 
 ```bash
