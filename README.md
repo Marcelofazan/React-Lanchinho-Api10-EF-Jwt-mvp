@@ -13,8 +13,6 @@ Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no 
   },
 ```
 
-#### 🔄 Executar a aplicação
-
 ## 📁 Backend
 
 #### 📋 O que voçê vai ver nesse Projeto
@@ -25,6 +23,8 @@ Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no 
 | **MailKit** | Biblioteca usada para criar, enviar e receber e-mails. |
 | **MimeKit** | Biblioteca usada para criar, analisar e modificar mensagens de e-mail. |
 | **IFormFile** | Interface nativa que facilita a recepção de dados como imagens, documentos enviados por formulários. |
+
+#### 🔄 Executar a aplicação
 
 ```bash
 cd ProjetoLanchinhoAPI
@@ -43,6 +43,8 @@ A API ficará disponivel em **http://localhost:5000/scalar/**
 |-----------|-----------|
 | **Bootstrap** | Framework front-end de códigos prontos em HTML, CSS e JavaScript para criar sites e interfaces web responsivas |
 | **react-slick** | Biblioteca React usada para criar carrosséis (ou sliders). |
+
+#### 🔄 Executar a aplicação
 
 - Recuperar as dependencias do projeto node_modules . 
 ```bash
