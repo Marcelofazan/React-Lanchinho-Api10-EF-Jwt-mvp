@@ -1,0 +1,174 @@
+/* ForcaTitulosDourados.css - MÁXIMA PRIORIDADE */
+
+/* ===== FORÇA MÁXIMA PARA TODOS OS TÍTULOS ===== */
+
+/* Títulos H1 */
+h1,
+.h1,
+div h1,
+section h1,
+main h1,
+.container h1,
+.status-loja-container h2,
+.meus-pedidos-container h2,
+.menu-container h1,
+.checkout-container h2,
+.editar-perfil-container h2,
+.perfil-container h2,
+.cadastro-produto-container h2 {
+  color: #000000 !important;
+  font-family: "Young", serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0 3px 10px rgba(128, 128, 129),
+    0 0 40px rgba(255, 179, 0, 0.4), 0 0 60px rgba(255, 179, 0, 0.2) !important;
+}
+
+/* Títulos H2 */
+h2,
+.h2,
+div h2,
+section h2,
+main h2,
+.container h2 {
+  color: #000000 !important;
+  font-family: "Young", serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 8px rgba(128, 128, 128), 0 0 30px rgba(150, 5, 5) !important;
+}
+
+/* Títulos H3, H4, H5 */
+h3,
+.h3,
+div h3,
+section h3,
+main h3,
+.container h3,
+h4,
+.h4,
+div h4,
+section h4,
+main h4,
+.container h4,
+h5,
+.h5,
+div h5,
+section h5,
+main h5,
+.container h5,
+.card-header h5 {
+  color: #000000 !important;
+  font-family: "Philosopher", serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 6px rgba(255, 179, 0, 0.4) !important;
+}
+
+/* Título Status Atual na página de Gerenciar Loja */
+.status-loja-container .card-header h5,
+.status-loja-container h2,
+.status-loja-container h3,
+.status-loja-container h4 {
+  color: #000000 !important;
+  font-family: "Young", serif !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 8px rgba(128, 128, 128), 0 0 30px rgba(150, 5, 5) !important;
+}
+
+label,
+.form-label,
+.status-loja-container .form-label,
+.meus-pedidos-container .form-label,
+.cadastro-produto-container .form-label,
+.editar-perfil-container .form-label,
+.modal-entrega .form-label,
+form label,
+.container label,
+div label {
+  color: #000000 !important;
+  font-family: "Philosopher", serif !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  text-shadow: 0 2px 6px rgba(128, 128, 128), 0 0 20px rgba(150, 5, 5) !important;
+}
+
+.status-loja-container strong,
+.status-loja-container .row strong {
+  color: #000000 !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 3px rgba(150, 5, 5) !important;
+}
+
+.status-loja-container .form-label.small,
+.status-loja-container small {
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+.card-header,
+.card-header h5,
+.status-loja-container .card-header h5 {
+  color: #000000 !important;
+}
+
+.card-header h5 {
+  background: transparent !important;
+}
+
+strong,
+b {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.status-loja-container .card-header.bg-dark h5,
+.status-loja-container .card-header.bg-dark * {
+  color: #000000 !important;
+}
+
+.card-header.bg-dark h5 {
+  color: #000000 !important;
+  text-shadow: 0 2px 8px rgba(128, 128, 129) !important;
+}
+
+@media (max-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 2rem !important;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.75rem !important;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.5rem !important;
+  }
+
+  label,
+  .form-label {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  h1,
+  .h1 {
+    font-size: 1.75rem !important;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.25rem !important;
+  }
+
+  label,
+  .form-label {
+    font-size: 0.9rem !important;
+  }
+}

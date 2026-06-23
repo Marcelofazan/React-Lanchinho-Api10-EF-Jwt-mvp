@@ -1,0 +1,222 @@
+/* Perfil.css */
+
+.perfil-container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.perfil-container h2 {
+  font-family: "Young", serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(255, 179, 0, 0.4);
+}
+
+.perfil-container .card {
+  background: linear-gradient(145deg, #2a2a3e 0%, #d92800 100%);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.perfil-container .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #d32f2f 0%, #000000 50%, #d32f2f 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+.perfil-container .card-body {
+  padding: 2.5rem;
+}
+
+.perfil-container .row > div {
+  margin-bottom: 1.5rem;
+}
+
+.perfil-container strong {
+  font-family: "Philosopher", serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.perfil-container p {
+  font-family: "Roboto", sans-serif;
+  color: #cbd5e0;
+  font-size: 1rem;
+  margin: 0;
+  padding: 12px 16px;
+  background: rgba(26, 26, 46, 0.6);
+  border: 2px solid rgba(255, 179, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.perfil-container p:hover {
+  background: rgba(26, 26, 46, 0.8);
+  border-color: rgba(255, 179, 0, 0.4);
+}
+
+.perfil-container hr {
+  border-color: rgba(150, 5, 5);
+  margin: 2rem 0;
+}
+
+.perfil-container .btn-success {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  border: 2px solid #000000;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.perfil-container .btn-success::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.perfil-container .btn-success:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.perfil-container .btn-success:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(211, 47, 47, 0.5);
+  border-color: #f0e4ef;
+  text-decoration: none;
+}
+
+.perfil-container .alert {
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid;
+}
+
+.perfil-container .alert-warning {
+  background: rgba(255, 193, 7, 0.15);
+  border-color: #f0e4ef;
+  color: #f5f5f5;
+}
+
+.perfil-container .alert .btn-primary {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  border: 2px solid #0d6efd;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.perfil-container .alert .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+  text-decoration: none;
+}
+
+.perfil-container .spinner-border {
+  border-color: rgba(150, 5, 5);
+  border-top-color: #000000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .perfil-container {
+    margin: 60px auto;
+    padding: 15px;
+  }
+
+  .perfil-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .perfil-container .card-body {
+    padding: 2rem;
+  }
+
+  .perfil-container .btn-success {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .perfil-container {
+    margin: 40px auto;
+    padding: 10px;
+  }
+
+  .perfil-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .perfil-container .card-body {
+    padding: 1.5rem;
+  }
+
+  .perfil-container p {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  .perfil-container .btn-success {
+    font-size: 0.95rem;
+    padding: 12px 20px;
+    width: 100%;
+  }
+}

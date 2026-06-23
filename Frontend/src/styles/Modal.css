@@ -1,0 +1,249 @@
+/* Modal.css */
+
+.modal-entrega .modal-content {
+  background: linear-gradient(145deg, #2a2a3e 0%, #d92800 100%);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.modal-entrega .modal-header {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  border-bottom: 2px solid #000000;
+  padding: 20px 24px;
+}
+
+.modal-entrega .modal-title {
+  color: white;
+  font-family: "Young", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.modal-entrega .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.modal-entrega .modal-body {
+  padding: 2rem;
+}
+
+.modal-entrega .form-label {
+  font-family: "Philosopher", serif;
+  color: #cbd5e0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-entrega .form-control,
+.modal-entrega .form-select {
+  background: rgba(26, 26, 46, 0.6);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 10px;
+  color: #f5f5f5;
+  padding: 12px 16px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.modal-entrega .form-control::placeholder {
+  color: #8d6e63;
+}
+
+.modal-entrega .form-control:focus,
+.modal-entrega .form-select:focus {
+  background: rgba(26, 26, 46, 0.8);
+  border-color: #000000;
+  box-shadow: 0 0 0 4px rgba(255, 179, 0, 0.2);
+  color: #f5f5f5;
+}
+
+.modal-entrega .form-control:disabled,
+.modal-entrega .form-select:disabled {
+  background: rgba(26, 26, 46, 0.4);
+  color: #8d6e63;
+  cursor: not-allowed;
+}
+
+.modal-entrega .form-text {
+  color: #8d6e63;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.tipo-pedido-group {
+  display: flex;
+  gap: 0;
+}
+
+.tipo-pedido-btn {
+  flex: 1;
+  padding: 12px !important;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.tipo-pedido-btn.btn-success {
+  background: linear-gradient(135deg, #198754 0%, #e3dc05 100%);
+  border-color: #e3dc05;
+}
+
+.tipo-pedido-btn.btn-outline-success {
+  background: rgba(26, 26, 46, 0.6);
+  border-color: rgba(150, 5, 5);
+  color: #cbd5e0;
+}
+
+.tipo-pedido-btn.btn-outline-success:hover {
+  background: rgba(255, 179, 0, 0.1);
+  border-color: #000000;
+  color: #000000;
+}
+
+.tipo-pedido-info {
+  color: #8d6e63;
+  font-size: 0.875rem;
+}
+
+.tipo-pedido-info strong {
+  color: #000000;
+}
+
+.retirada-info {
+  background: rgba(13, 202, 240, 0.15);
+  border: 2px solid rgba(13, 202, 240, 0.3);
+  border-radius: 12px;
+  color: #f5f5f5;
+}
+
+.retirada-info strong {
+  color: #0dcaf0;
+}
+
+.modal-entrega .modal-footer {
+  background: linear-gradient(180deg, #2a2a3e 0%, #d92800 100%);
+  border-top: 2px solid rgba(255, 179, 0, 0.2);
+  padding: 20px 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.modal-entrega .modal-footer .btn {
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.modal-entrega .modal-footer .btn-secondary {
+  background: rgba(26, 26, 46, 0.6);
+  border: 2px solid #6c757d;
+  color: #f5f5f5;
+}
+
+.modal-entrega .modal-footer .btn-secondary:hover {
+  background: rgba(108, 117, 125, 0.3);
+  border-color: #6c757d;
+  transform: translateY(-2px);
+}
+
+.modal-entrega .modal-footer .btn-primary {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  border: 2px solid #000000;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-entrega .modal-footer .btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+
+.modal-entrega .modal-footer .btn-primary:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.modal-entrega .modal-footer .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(211, 47, 47, 0.4);
+}
+
+.modal-entrega .modal-footer .btn-primary:disabled {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  border-color: #6c757d;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.modal-entrega .modal-footer .btn-primary:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .modal-entrega .modal-body {
+    padding: 1.5rem;
+  }
+
+  .modal-entrega .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .tipo-pedido-btn {
+    font-size: 0.9rem;
+    padding: 10px !important;
+  }
+
+  .modal-entrega .modal-footer .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-entrega .modal-body {
+    padding: 1.25rem;
+  }
+
+  .modal-entrega .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .modal-entrega .form-control,
+  .modal-entrega .form-select {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  .tipo-pedido-btn {
+    font-size: 0.85rem;
+    padding: 10px !important;
+  }
+
+  .modal-entrega .modal-footer {
+    flex-direction: column;
+  }
+
+  .modal-entrega .modal-footer .btn {
+    width: 100%;
+    padding: 12px;
+  }
+}

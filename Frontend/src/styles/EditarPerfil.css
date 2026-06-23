@@ -1,0 +1,178 @@
+/* EditarPerfil.css */
+
+.editar-perfil-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.editar-perfil-container h2 {
+  font-family: "Young", serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(255, 179, 0, 0.4);
+}
+
+.editar-perfil-container .form-label {
+  font-family: "Philosopher", serif;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.editar-perfil-container .form-control {
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.editar-perfil-container .form-control:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 4px rgba(255, 179, 0, 0.2);
+}
+
+.editar-perfil-container .form-control:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.editar-perfil-container .form-text {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.editar-perfil-container .btn-success {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  border: 2px solid #000000;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 14px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.editar-perfil-container .btn-success::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.editar-perfil-container .btn-success:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.editar-perfil-container .btn-success:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(211, 47, 47, 0.5);
+  border-color: #f0e4ef;
+}
+
+.editar-perfil-container .btn-success:disabled {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  border-color: #6c757d;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.editar-perfil-container .btn-success:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.editar-perfil-container .alert {
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.editar-perfil-container .alert-success {
+  background-color: #d1f2eb;
+  border-color: #e3dc05;
+  color: #155724;
+}
+
+.editar-perfil-container .alert-success .alert-heading {
+  color: #0f6848;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+}
+
+.editar-perfil-container .alert-danger {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.editar-perfil-container .spinner-border {
+  border-color: rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .editar-perfil-container {
+    margin: 60px auto;
+    padding: 15px;
+  }
+
+  .editar-perfil-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .editar-perfil-container .btn-success {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .editar-perfil-container {
+    margin: 40px auto;
+    padding: 10px;
+  }
+
+  .editar-perfil-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .editar-perfil-container .form-control {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  .editar-perfil-container .btn-success {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}

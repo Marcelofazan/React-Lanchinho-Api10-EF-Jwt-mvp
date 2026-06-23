@@ -1,0 +1,228 @@
+/* Checkout.css */
+
+.checkout-container {
+  min-height: 100vh;
+  padding: 100px 20px 60px;
+  background: linear-gradient(180deg, #d92800 0%, #0f0f1e 100%);
+}
+
+.checkout-container h2 {
+  font-family: "Young", serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(255, 179, 0, 0.4);
+}
+
+.checkout-container h4 {
+  font-family: "Philosopher", serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkout-container .card {
+  background: linear-gradient(145deg, #2a2a3e 0%, #d92800 100%);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.checkout-container .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 179, 0, 0.2);
+}
+
+.checkout-container .card-title {
+  font-family: "Philosopher", serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkout-container .card-text {
+  color: #cbd5e0;
+  font-size: 0.95rem;
+}
+
+.checkout-container .card-header {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  border-bottom: 2px solid #000000;
+  padding: 1rem 1.5rem;
+}
+
+.checkout-container .card-header h5 {
+  margin: 0;
+  color: white;
+  font-family: "Young", serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.checkout-container .card-body {
+  padding: 1.5rem;
+}
+
+.checkout-container .text-end {
+  text-align: right;
+}
+
+.checkout-container strong {
+  color: #000000;
+  font-weight: 700;
+}
+
+.checkout-container .btn-success {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  border: 2px solid #000000;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 14px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkout-container .btn-success::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.checkout-container .btn-success:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.checkout-container .btn-success:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(211, 47, 47, 0.5);
+  border-color: #f0e4ef;
+}
+
+.checkout-container .btn-success:disabled {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  border-color: #6c757d;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.checkout-container .btn-success:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.checkout-container .alert {
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid;
+}
+
+.checkout-container .alert-success {
+  background: rgba(32, 201, 151, 0.15);
+  border-color: #e3dc05;
+  color: #f5f5f5;
+}
+
+.checkout-container .alert-success .alert-heading {
+  color: #e3dc05;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+}
+
+.checkout-container .alert-warning {
+  background: rgba(255, 193, 7, 0.15);
+  border-color: #f0e4ef;
+  color: #f5f5f5;
+}
+
+.checkout-container .alert-warning .alert-heading {
+  color: #f0e4ef;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+}
+
+.checkout-container .sticky-top {
+  position: sticky;
+  top: 100px;
+  z-index: 10;
+}
+
+.checkout-container .spinner-border {
+  border-color: rgba(150, 5, 5);
+  border-top-color: #000000;
+}
+
+@media (max-width: 991px) {
+  .checkout-container .sticky-top {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 80px 15px 50px;
+  }
+
+  .checkout-container h2 {
+    font-size: 2rem;
+  }
+
+  .checkout-container h4 {
+    font-size: 1.2rem;
+  }
+
+  .checkout-container .card-body {
+    padding: 1.25rem;
+  }
+
+  .checkout-container .btn-success {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .checkout-container {
+    padding: 70px 10px 40px;
+  }
+
+  .checkout-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .checkout-container h4 {
+    font-size: 1.1rem;
+  }
+
+  .checkout-container .card-title {
+    font-size: 1.1rem;
+  }
+
+  .checkout-container .card-text {
+    font-size: 0.9rem;
+  }
+
+  .checkout-container .btn-success {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}

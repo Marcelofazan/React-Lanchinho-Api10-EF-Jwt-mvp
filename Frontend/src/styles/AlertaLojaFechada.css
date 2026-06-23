@@ -1,0 +1,172 @@
+/* AlertaLojaFechada.css - Versão Compacta */
+
+.alerta-loja-fechada {
+  background: linear-gradient(
+    135deg,
+    rgba(211, 47, 47, 0.95) 0%,
+    rgba(255, 179, 0, 0.9) 100%
+  );
+  border: 2px solid #000000;
+  border-radius: 12px;
+  padding: 12px 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-out;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.alerta-loja-fechada::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
+  animation: pulse 2s infinite;
+}
+
+.alerta-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.alerta-icon {
+  font-size: 1.5rem;
+  color: white;
+  animation: flicker 2s infinite;
+}
+
+.alerta-titulo {
+  font-family: "Young", serif;
+  color: white;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.alerta-mensagem {
+  color: white;
+  margin: 0 0 8px 0;
+  font-family: "Philosopher", serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.alerta-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.alerta-info-icon {
+  font-size: 0.9rem;
+}
+
+.alerta-horario {
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  display: inline-block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.01);
+    opacity: 0.95;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .alerta-loja-fechada {
+    padding: 10px 14px;
+    margin-bottom: 16px;
+  }
+
+  .alerta-header {
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .alerta-icon {
+    font-size: 1.3rem;
+  }
+
+  .alerta-titulo {
+    font-size: 1rem;
+  }
+
+  .alerta-mensagem {
+    font-size: 0.9rem;
+  }
+
+  .alerta-info,
+  .alerta-horario {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .alerta-loja-fechada {
+    padding: 10px 12px;
+    margin-bottom: 14px;
+  }
+
+  .alerta-header {
+    gap: 8px;
+  }
+
+  .alerta-icon {
+    font-size: 1.2rem;
+  }
+
+  .alerta-titulo {
+    font-size: 0.95rem;
+  }
+
+  .alerta-mensagem {
+    font-size: 0.85rem;
+  }
+}

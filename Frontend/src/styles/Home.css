@@ -1,0 +1,363 @@
+/* Home.css - Página Principal com Tema Mitológico */
+
+/* Container Principal */
+.menu-container {
+  min-height: 100vh;
+  padding: 100px 20px 120px;
+  background: linear-gradient(180deg, #6bb978 0%, #23e95e 100%);
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Título do Cardápio */
+.menu-container h1 {
+  font-family: "Young", serif;
+  color: #000000 !important;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(128, 128, 128), 0 0 40px rgba(150, 5, 5);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.menu-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #000000, transparent);
+  box-shadow: 0 0 10px rgba(128, 128, 128);
+}
+
+/* Botões de Filtro */
+.menu-container .btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.menu-container .btn-outline-success,
+.menu-container .btn-success {
+  font-family: "Philosopher", serif;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 10px;
+  border: 2px solid rgba(150, 5, 5);
+  background: rgba(26, 26, 46, 0.6);
+  color: #cbd5e0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-container .btn-outline-success::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 179, 0, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+
+.menu-container .btn-outline-success:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.menu-container .btn-outline-success:hover {
+  background: rgba(255, 179, 0, 0.15);
+  border-color: #000000;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(150, 5, 5);
+}
+
+.menu-container .btn-success {
+  background: linear-gradient(135deg, #198754 0%, #e3dc05 100%);
+  border-color: #e3dc05;
+  color: white;
+}
+
+.menu-container .btn-success:hover {
+  background: linear-gradient(135deg, #e3dc05 0%, #198754 100%);
+  border-color: #1abc9c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 135, 84, 0.5);
+}
+
+/* Grid de Produtos */
+.menu-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Alerts */
+.menu-container .alert {
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid;
+  animation: slideIn 0.5s ease-out;
+}
+
+.menu-container .alert-info {
+  background: rgba(13, 202, 240, 0.15);
+  border-color: #0dcaf0;
+  color: #f5f5f5;
+}
+
+.menu-container .alert-info .alert-heading {
+  font-family: "Philosopher", serif;
+  color: #0dcaf0;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.menu-container .alert-danger {
+  background: rgba(220, 53, 69, 0.15);
+  border-color: #dc3545;
+  color: #f5f5f5;
+}
+
+.menu-container .alert-danger .alert-heading {
+  font-family: "Philosopher", serif;
+  color: #dc3545;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.menu-container .alert-warning {
+  background: rgba(255, 193, 7, 0.15);
+  border-color: #f0e4ef;
+  color: #6bb978;
+}
+
+.menu-container .alert-warning h4 {
+  color: #d92800;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+}
+
+/* Botão Ver Carrinho Flutuante */
+.btn-ver-carrinho {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 179, 0, 0.4);
+  background: linear-gradient(135deg, #198754 0%, #e3dc05 100%);
+  border: 3px solid #e3dc05;
+  color: white;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.btn-ver-carrinho:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 50px rgba(128, 128, 129);
+  background: linear-gradient(135deg, #e3dc05 0%, #198754 100%);
+}
+
+/* Loading Spinner */
+.menu-container .spinner-border {
+  border-color: rgba(150, 5, 5);
+  border-top-color: #000000;
+  width: 3rem;
+  height: 3rem;
+}
+
+.menu-container .text-center {
+  color: #cbd5e0;
+  font-family: "Philosopher", serif;
+}
+
+/* Painel Carrinho (se necessário) */
+.painel-carrinho {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 60%;
+  background: linear-gradient(145deg, #2a2a3e 0%, #d92800 100%);
+  border-top: 3px solid #000000;
+  z-index: 1000;
+  overflow-y: auto;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.4s ease-in-out;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 179, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4), 0 0 50px rgba(255, 179, 0, 0.7);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+  .menu-container {
+    padding: 90px 15px 110px;
+  }
+
+  .menu-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .menu-container .row {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    padding: 80px 15px 100px;
+  }
+
+  .menu-container h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .menu-container h1::after {
+    width: 150px;
+  }
+
+  .menu-container .btn-outline-success,
+  .menu-container .btn-success {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+
+  .menu-container .row {
+    gap: 16px;
+  }
+
+  .btn-ver-carrinho {
+    bottom: 15px;
+    right: 15px;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-container {
+    padding: 70px 10px 90px;
+  }
+
+  .menu-container h1 {
+    font-size: 1.75rem;
+    letter-spacing: 0.5px;
+    padding-bottom: 15px;
+  }
+
+  .menu-container h1::after {
+    width: 120px;
+    height: 2px;
+  }
+
+  .menu-container .btn-group {
+    gap: 8px;
+  }
+
+  .menu-container .btn-outline-success,
+  .menu-container .btn-success {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .menu-container .row {
+    gap: 12px;
+  }
+
+  .menu-container .alert {
+    padding: 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-ver-carrinho {
+    bottom: 12px;
+    right: 12px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    border-radius: 40px;
+  }
+}
+
+/* Estados Especiais */
+.menu-container .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.menu-container .btn:disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Scroll Suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevenir Scroll Horizontal */
+body {
+  overflow-x: hidden;
+}

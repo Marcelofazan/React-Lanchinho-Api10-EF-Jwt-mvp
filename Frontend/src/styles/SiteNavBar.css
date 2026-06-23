@@ -1,0 +1,277 @@
+/* Navbar.css */
+
+.custom-navbar {
+  background: linear-gradient(
+    135deg,
+    #0f0c29 0%,
+    #d92800 50%,
+    #302b63 100%
+  ) !important;
+  border-bottom: 3px solid #000000;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  padding: 0.75rem 0;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar.scrolled {
+  padding: 0.5rem 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.custom-navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #000000, transparent);
+  animation: shimmer 3s linear infinite;
+}
+
+.brand-logo {
+  font-family: "Young", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000 !important;
+  text-shadow: 0 0 10px rgba(128, 128, 128);
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.brand-logo:hover {
+  color: #f0e4ef !important;
+  text-shadow: 0 0 20px rgba(255, 179, 0, 0.8);
+  transform: scale(1.05);
+}
+
+.nav-link-custom {
+  font-family: "Philosopher", serif;
+  color: #cbd5e0 !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem !important;
+  margin: 0 0.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #000000 !important;
+  background: rgba(255, 179, 0, 0.1);
+}
+
+.nav-link-custom:hover::after {
+  width: 80%;
+}
+
+.admin-link {
+  color: #e3dc05 !important;
+}
+
+.admin-link:hover {
+  color: #1abc9c !important;
+  background: rgba(32, 201, 151, 0.1);
+}
+
+.user-dropdown .dropdown-toggle {
+  font-family: "Philosopher", serif;
+  font-weight: 600;
+  color: #cbd5e0 !important;
+  background: rgba(255, 179, 0, 0.1);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.user-dropdown .dropdown-toggle:hover,
+.user-dropdown .dropdown-toggle:focus {
+  color: #000000 !important;
+  background: rgba(255, 179, 0, 0.2);
+  border-color: #000000;
+  box-shadow: 0 0 10px rgba(150, 5, 5);
+}
+
+.user-dropdown-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-badge {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(211, 47, 47, 0.4);
+}
+
+.user-dropdown .dropdown-menu {
+  background: linear-gradient(145deg, #2a2a3e 0%, #d92800 100%);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 12px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.user-dropdown .dropdown-item {
+  color: #cbd5e0;
+  font-family: "Philosopher", serif;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.user-dropdown .dropdown-item:hover {
+  color: #000000;
+  background: rgba(255, 179, 0, 0.15);
+}
+
+.user-dropdown .dropdown-divider {
+  border-color: rgba(150, 5, 5);
+  margin: 0.5rem 0;
+}
+
+.logout-item {
+  color: #dc3545 !important;
+}
+
+.logout-item:hover {
+  color: #ff4d4d !important;
+  background: rgba(220, 53, 69, 0.15) !important;
+}
+
+.login-link {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  color: white !important;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+
+.login-link:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.login-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(211, 47, 47, 0.5);
+  border-color: #f0e4ef;
+}
+
+.navbar-toggler {
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  background: rgba(255, 179, 0, 0.1);
+  box-shadow: 0 0 10px rgba(150, 5, 5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffb300' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.spinner-border-sm {
+  color: #000000;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 0.5rem 0;
+  }
+
+  .brand-logo {
+    font-size: 1.3rem;
+  }
+
+  .navbar-collapse {
+    background: rgba(26, 26, 46, 0.95);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 2px solid rgba(150, 5, 5);
+  }
+
+  .nav-link-custom {
+    margin: 0.25rem 0;
+    text-align: center;
+  }
+
+  .login-link {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .user-dropdown .dropdown-toggle {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-link-custom {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem !important;
+  }
+
+  .admin-badge {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+  }
+}

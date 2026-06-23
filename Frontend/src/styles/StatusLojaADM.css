@@ -1,0 +1,278 @@
+/* StatusLojaADM.css */
+
+.status-loja-container {
+  min-height: 100vh;
+  padding: 100px 20px 60px;
+  background: linear-gradient(180deg, #d92800 0%, #0f0f1e 100%);
+}
+
+.status-loja-container h2 {
+  font-family: "Young", serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(255, 179, 0, 0.4);
+}
+
+.status-loja-container .card {
+  background: linear-gradient(145deg, #2a2a3e 0%, #d92800 100%);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+}
+
+.status-loja-container .card-header {
+  background: linear-gradient(135deg, #2a2a3e 0%, #d92800 100%);
+  border-bottom: 2px solid rgba(150, 5, 5);
+  padding: 1.5rem;
+}
+
+.status-loja-container .card-header h5 {
+  margin: 0;
+  color: #000000;
+  font-family: "Young", serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.status-loja-container .card-body {
+  padding: 2rem;
+}
+
+.status-loja-container .badge {
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
+}
+
+.status-loja-container .badge.bg-success {
+  background: linear-gradient(135deg, #198754 0%, #e3dc05 100%) !important;
+  border: 2px solid #e3dc05;
+}
+
+.status-loja-container .badge.bg-danger {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%) !important;
+  border: 2px solid #dc3545;
+}
+
+.status-loja-container .btn {
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.status-loja-container .btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.status-loja-container .btn:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.status-loja-container .btn-success {
+  background: linear-gradient(135deg, #198754 0%, #e3dc05 100%);
+  border: 2px solid #e3dc05;
+}
+
+.status-loja-container .btn-success:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(25, 135, 84, 0.5);
+}
+
+.status-loja-container .btn-danger {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  border: 2px solid #dc3545;
+}
+
+.status-loja-container .btn-danger:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(220, 53, 69, 0.5);
+}
+
+.status-loja-container .btn-primary {
+  background: linear-gradient(135deg, #d32f2f 0%, #000000 100%);
+  border: 2px solid #000000;
+}
+
+.status-loja-container .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(211, 47, 47, 0.5);
+}
+
+.status-loja-container .btn:disabled {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  border-color: #6c757d;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-loja-container .btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.status-loja-container .form-label {
+  font-family: "Philosopher", serif;
+  color: #cbd5e0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.status-loja-container .form-control,
+.status-loja-container .form-check-input {
+  background: rgba(26, 26, 46, 0.6);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 10px;
+  color: #f5f5f5;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.status-loja-container .form-control:focus,
+.status-loja-container .form-check-input:focus {
+  background: rgba(26, 26, 46, 0.8);
+  border-color: #000000;
+  box-shadow: 0 0 0 4px rgba(255, 179, 0, 0.2);
+  color: #f5f5f5;
+}
+
+.status-loja-container .form-control:disabled {
+  background: rgba(26, 26, 46, 0.4);
+  color: #8d6e63;
+  cursor: not-allowed;
+}
+
+.status-loja-container .form-check-label {
+  color: #cbd5e0;
+  font-weight: 600;
+}
+
+.status-loja-container .border-bottom {
+  border-bottom: 2px solid rgba(255, 179, 0, 0.2) !important;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.status-loja-container .alert {
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid;
+}
+
+.status-loja-container .alert-info {
+  background: rgba(13, 202, 240, 0.15);
+  border-color: #0dcaf0;
+  color: #f5f5f5;
+}
+
+.status-loja-container .alert-danger {
+  background: rgba(220, 53, 69, 0.15);
+  border-color: #dc3545;
+  color: #f5f5f5;
+}
+
+.status-loja-container .spinner-border {
+  border-color: rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+}
+
+.status-loja-container strong {
+  color: #000000;
+}
+
+.status-loja-container small {
+  color: #8d6e63;
+}
+
+@media (max-width: 768px) {
+  .status-loja-container {
+    padding: 80px 15px 50px;
+  }
+
+  .status-loja-container h2 {
+    font-size: 2rem;
+  }
+
+  .status-loja-container .card-header {
+    padding: 1.25rem;
+  }
+
+  .status-loja-container .card-header h5 {
+    font-size: 1.2rem;
+  }
+
+  .status-loja-container .card-body {
+    padding: 1.5rem;
+  }
+
+  .status-loja-container .badge {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .status-loja-container .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .status-loja-container {
+    padding: 70px 10px 40px;
+  }
+
+  .status-loja-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .status-loja-container .card-header {
+    padding: 1rem;
+  }
+
+  .status-loja-container .card-header h5 {
+    font-size: 1.1rem;
+  }
+
+  .status-loja-container .card-body {
+    padding: 1.25rem;
+  }
+
+  .status-loja-container .badge {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .status-loja-container .btn {
+    font-size: 0.85rem;
+    padding: 10px 16px;
+  }
+
+  .status-loja-container .row .col-md-6,
+  .status-loja-container .row .col-md-3 {
+    margin-bottom: 1rem;
+  }
+}

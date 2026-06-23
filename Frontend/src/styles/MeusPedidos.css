@@ -1,0 +1,232 @@
+/* MeusPedidos.css */
+
+.meus-pedidos-container {
+  min-height: 100vh;
+  padding: 100px 20px 60px;
+  background: linear-gradient(180deg, #d92800 0%, #0f0f1e 100%);
+}
+
+.meus-pedidos-container h2 {
+  font-family: "Young", serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(255, 179, 0, 0.4);
+}
+
+.meus-pedidos-container .card {
+  background: linear-gradient(145deg, #2a2a3e 0%, #d92800 100%);
+  border: 2px solid rgba(150, 5, 5);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.meus-pedidos-container .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 179, 0, 0.2);
+  border-color: #000000;
+}
+
+.meus-pedidos-container .card-header {
+  background: linear-gradient(135deg, #2a2a3e 0%, #d92800 100%);
+  border-bottom: 2px solid rgba(150, 5, 5);
+  padding: 1.25rem;
+}
+
+.meus-pedidos-container .card-header h5 {
+  margin: 0;
+  color: #000000;
+  font-family: "Young", serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.meus-pedidos-container .card-header small {
+  color: #8d6e63;
+  font-size: 0.85rem;
+}
+
+.meus-pedidos-container .badge {
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.meus-pedidos-container .badge.bg-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%) !important;
+}
+
+.meus-pedidos-container .card-body {
+  padding: 1.5rem;
+}
+
+.meus-pedidos-container .text-muted {
+  color: #8d6e63 !important;
+  font-size: 0.875rem;
+}
+
+.meus-pedidos-container .fw-semibold {
+  font-weight: 600;
+  color: #cbd5e0;
+}
+
+.meus-pedidos-container .text-primary {
+  color: #000000 !important;
+  font-family: "Philosopher", serif;
+  font-weight: 600;
+}
+
+.meus-pedidos-container .bg-light {
+  background: rgba(255, 179, 0, 0.1) !important;
+  border: 1px solid rgba(255, 179, 0, 0.2);
+  border-radius: 10px;
+}
+
+.meus-pedidos-container .text-success {
+  color: #e3dc05 !important;
+  font-family: "Young", serif;
+  font-weight: 700;
+}
+
+.meus-pedidos-container .btn-outline-success {
+  background: rgba(26, 26, 46, 0.6);
+  border: 2px solid rgba(150, 5, 5);
+  color: #000000;
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.meus-pedidos-container .btn-outline-success:hover {
+  background: rgba(255, 179, 0, 0.2);
+  border-color: #000000;
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+.meus-pedidos-container .btn-outline-success:disabled {
+  background: rgba(26, 26, 46, 0.4);
+  border-color: rgba(255, 179, 0, 0.2);
+  color: #8d6e63;
+  cursor: not-allowed;
+}
+
+.meus-pedidos-container .list-group {
+  background: transparent;
+  border: none;
+}
+
+.meus-pedidos-container .list-group-item {
+  background: rgba(26, 26, 46, 0.4);
+  border: 1px solid rgba(255, 179, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  color: #cbd5e0;
+  padding: 1rem;
+}
+
+.meus-pedidos-container .list-group-item:last-child {
+  margin-bottom: 0;
+}
+
+.meus-pedidos-container .alert {
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 2px solid;
+}
+
+.meus-pedidos-container .alert-info {
+  background: rgba(13, 202, 240, 0.15);
+  border-color: #0dcaf0;
+  color: #f5f5f5;
+}
+
+.meus-pedidos-container .alert-warning {
+  background: rgba(255, 193, 7, 0.15);
+  border-color: #f0e4ef;
+  color: #f5f5f5;
+}
+
+.meus-pedidos-container .alert .alert-heading {
+  font-family: "Philosopher", serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.meus-pedidos-container .spinner-border {
+  border-color: rgba(150, 5, 5);
+  border-top-color: #000000;
+}
+
+.meus-pedidos-container .collapse {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid rgba(255, 179, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .meus-pedidos-container {
+    padding: 80px 15px 50px;
+  }
+
+  .meus-pedidos-container h2 {
+    font-size: 2rem;
+  }
+
+  .meus-pedidos-container .card-header {
+    padding: 1rem;
+  }
+
+  .meus-pedidos-container .card-header h5 {
+    font-size: 1.1rem;
+  }
+
+  .meus-pedidos-container .card-body {
+    padding: 1.25rem;
+  }
+
+  .meus-pedidos-container .btn-outline-success {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .meus-pedidos-container {
+    padding: 70px 10px 40px;
+  }
+
+  .meus-pedidos-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .meus-pedidos-container .card-header {
+    padding: 0.875rem;
+  }
+
+  .meus-pedidos-container .card-header h5 {
+    font-size: 1rem;
+  }
+
+  .meus-pedidos-container .card-body {
+    padding: 1rem;
+  }
+
+  .meus-pedidos-container .badge {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .meus-pedidos-container .list-group-item {
+    padding: 0.875rem;
+  }
+}
