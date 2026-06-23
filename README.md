@@ -4,16 +4,6 @@ Aplicativo de Lanchinho com automação Google Sheets em React e API com autenti
 #### 🎨 Aqui uma Demonstração do Projeto
 <img width="800" height="350" alt="Lanchinho" src="https://github.com/user-attachments/assets/0819c431-f7cf-47cc-9659-090a4bf6b5c3" />
 
-#### 📋 O que voçê vai ver nesse Projeto
-
-| Tecnologia | Descrição |
-|-----------|-----------|
-| **Google Sheets** | Programa utilizado para planilhas online e gratuito do Google, permitindo criar, editar e analisar dados.|
-| **MailKit** | Biblioteca usada para criar, enviar e receber e-mails. |
-| **MimeKit** | Biblioteca usada para criar, analisar e modificar mensagens de e-mail. |
-| **IFormFile** | Interface nativa que facilita a recepção de dados como imagens, documentos enviados por formulários. |
-
-
 #### ⚠️ String de conexão do banco
 Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no trecho indicado:
 
@@ -26,6 +16,15 @@ Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no 
 #### 🔄 Executar a aplicação
 
 ## 📁 Backend
+
+#### 📋 O que voçê vai ver nesse Projeto
+
+| Tecnologia | Descrição |
+|-----------|-----------|
+| **Google Sheets** | Programa utilizado para planilhas online e gratuito do Google, permitindo criar, editar e analisar dados.|
+| **MailKit** | Biblioteca usada para criar, enviar e receber e-mails. |
+| **MimeKit** | Biblioteca usada para criar, analisar e modificar mensagens de e-mail. |
+| **IFormFile** | Interface nativa que facilita a recepção de dados como imagens, documentos enviados por formulários. |
 
 ```bash
 cd ProjetoLanchinhoAPI
