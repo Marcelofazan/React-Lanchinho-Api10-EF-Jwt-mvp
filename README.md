@@ -22,6 +22,7 @@ Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no 
 
 | Tecnologia | Descrição |
 |-----------|-----------|
+| **CORS** | 	Mecanismo de segurança implementado no navegador e não uma responsabilidade do frontend ou backend. |
 | **Google Sheets** | Programa utilizado para planilhas online e gratuito do Google, permitindo criar, editar e analisar dados.|
 | **MailKit** | Biblioteca usada para criar, enviar e receber e-mails. |
 | **MimeKit** | Biblioteca usada para criar, analisar e modificar mensagens de e-mail. |
