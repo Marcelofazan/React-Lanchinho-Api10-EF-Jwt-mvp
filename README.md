@@ -5,7 +5,8 @@ Aplicativo de Lanchinho com automação Google Sheets em React e API com autenti
 <img width="800" height="350" alt="Lanchinho" src="https://github.com/user-attachments/assets/0819c431-f7cf-47cc-9659-090a4bf6b5c3" />
 
 #### 💬 Requisitos do Projeto
-Configrações do arquivo **appsettings.json**
+- Configrações do arquivo **appsettings.json**
+- Realizar Migrations EntityFramework .NET
 
 #### ⚠️ String de conexão do banco
 Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no trecho indicado:
