@@ -2,7 +2,7 @@
 Aplicativo de Lanchinho com automação Google Sheets em React e API com autenticação Jwt em C# ASP.NET Core 10 com banco de dados SQL-Server.
 
 #### 🎨 Aqui uma Demonstração do Projeto
-<img width="800" height="350" alt="Lanchinho" src="https://github.com/user-attachments/assets/0819c431-f7cf-47cc-9659-090a4bf6b5c3" />
+<img width="700" height="350" alt="Lanchinho" src="https://github.com/user-attachments/assets/0819c431-f7cf-47cc-9659-090a4bf6b5c3" />
 
 #### 💬 Requisitos do Projeto
 - Configrações do arquivo **appsettings.json**
