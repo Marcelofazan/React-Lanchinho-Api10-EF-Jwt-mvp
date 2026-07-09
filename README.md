@@ -1,4 +1,4 @@
-## 🌐 React-Lanchinho-Api10-EF-Jwt-mvp
+## 🌐 React-Lanchinho-Api10-EF-mvp
 Aplicativo de Lanchinho com automação Google Sheets em React 18 e API com autenticação Jwt em C# ASP.NET Core 10 com banco de dados SQL-Server.
 
 #### 🎨 Aqui uma Demonstração do Projeto
@@ -26,6 +26,7 @@ Modifique [SUA_SENHA] na string de conexão no arquivo **appsettings.json**, no 
 | **BCrypt** | Algoritmo de hashing criptográfico utilizado para armazenar senhas de forma segura |
 | **CORS** | 	Mecanismo de segurança implementado no navegador e não uma responsabilidade do frontend ou backend. |
 | **Google Sheets** | Programa utilizado para planilhas online e gratuito do Google, permitindo criar, editar e analisar dados.|
+| **JWT** |	É um crachá digital usado para identificar usuários e trocar informações de forma segura entre computadores |
 | **MailKit** | Biblioteca usada para criar, enviar e receber e-mails. |
 | **MimeKit** | Biblioteca usada para criar, analisar e modificar mensagens de e-mail. |
 | **IFormFile** | Interface nativa que facilita a recepção de dados como imagens, documentos enviados por formulários. |
