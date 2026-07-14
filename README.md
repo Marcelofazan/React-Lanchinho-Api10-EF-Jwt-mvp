@@ -1,4 +1,4 @@
-## 🌐 React-Lanchinho-Api10-mvp
+## 🌐 React-Net-Lanchinho-mvp
 Aplicativo de Lanchinho com automação Google Sheets em React 18 e API com autenticação Jwt em C# ASP.NET Core 10 EF com banco de dados SQL-Server.
 
 #### 🎨 Aqui uma Demonstração do Projeto
